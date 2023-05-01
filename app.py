@@ -6,8 +6,9 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-tokenizer = AutoTokenizer.from_pretrained("inu-ai/alpaca-guanaco-japanese-gpt-1b", use_fast=False)
-model = AutoModelForCausalLM.from_pretrained("inu-ai/alpaca-guanaco-japanese-gpt-1b").to(device)
+model_path = "./data/models/inu-ai/alpaca-guanaco-japanese-gpt-1b"
+tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+model = AutoModelForCausalLM.from_pretrained(model_path).to(device)
 
 def predict(system_msg, inputs, top_p, temperature, chat_counter, chatbot=[], history=[]):
     # ここでモデルを使って応答を生成する処理を実装します。
