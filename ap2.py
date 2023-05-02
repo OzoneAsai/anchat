@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 import time
 
@@ -11,6 +11,11 @@ def get_all_files(path):
             file_path = os.path.join(root, file)
             all_files.append((file_path, os.path.getmtime(file_path)))
     return all_files
+
+@app.route('/images/<path:filename>')
+def send_image(filename):
+    webroot_dir = 'your_webroot_directory'
+    return send_from_directory(webroot_dir, filename)
 
 @app.route('/')
 def list_files():
