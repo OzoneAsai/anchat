@@ -1,5 +1,6 @@
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, send_from_directory
 import os
+import time
 
 app = Flask(__name__)
 
@@ -10,6 +11,12 @@ def get_all_files(path):
             file_path = os.path.join(root, file)
             all_files.append((file_path, os.path.getmtime(file_path)))
     return all_files
+
+@app.route('/images/<path:filename>')
+def send_image(filename):
+    webroot_dir = 'your_webroot_directory'
+    time.sleep(0.1)
+    return send_from_directory(webroot_dir, filename)
 
 @app.route('/')
 def list_files():
@@ -29,7 +36,7 @@ def list_files():
                 {% for file in files %}
                     <li>
                         {% if file[0].lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')) %}
-                            <img src="{{ file[0] }}" alt="{{ file[0] }}" width="100">
+                            <img src="/images/{{ file[0].split('/')[-1] }}" alt="{{ file[0] }}" width="100">
                         {% else %}
                             {{ file[0] }}
                         {% endif %}
@@ -42,4 +49,4 @@ def list_files():
     return render_template_string(template, files=files)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
