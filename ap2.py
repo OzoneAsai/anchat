@@ -14,8 +14,8 @@ def get_all_files(path):
 
 @app.route('/images/<path:filename>')
 def send_image(filename):
-    webroot_dir = 'your_webroot_directory'
-    return send_from_directory(webroot_dir, filename)
+    images_dir = 'your_images_directory'
+    return send_from_directory(images_dir, filename)
 
 @app.route('/')
 def list_files():
