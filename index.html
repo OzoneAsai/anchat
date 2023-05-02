@@ -9,7 +9,7 @@
             {% for file in files %}
                 <li>
                     {% if file[0].lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')) %}
-                        <a href="{{ url_for('send_image', filename=file[0].replace('\\', '/')) }}">{{ file[0].split('/')[-1] }}</a>
+                        <img src="{{ url_for('send_image', filename=file[0].replace('\\', '/')) }}" alt="{{ file[0].split('/')[-1] }}" width="100">
                     {% else %}
                         {{ file[0] }}
                     {% endif %}
