@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ファイル一覧</title>
+    </head>
+    <body>
+        <h1>更新日時順のファイル一覧</h1>
+        <ul>
+            {% for file in files %}
+                <li>
+                    {% if file[0].lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')) %}
+                        <a href="{{ url_for('static', filename='images/' + file[0].split('/')[-1]) }}">{{ file[0].split('/')[-1] }}</a>
+                    {% else %}
+                        {{ file[0] }}
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
