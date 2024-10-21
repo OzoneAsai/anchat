@@ -1,0 +1,36 @@
+License and Terms of Use
+
+以下のライセンスおよび利用条件は、常に日本語が優先されます。英語および中国語の翻訳も併記しますが、日本語版が正式なものとして扱われます。
+
+---
+
+ライセンスおよび利用条件
+
+この文書は再配布禁止ライセンスのもとで提供されています。以下の条件が適用されます：
+
+1. 再配布禁止：この文書の再配布、共有、公開は厳しく禁止されています。
+2. 参考用のみ：この文書は、未学習の方にとって入門的な資料となる可能性がありますが、内容の正確性や詳細については保証できません。
+3. 自己責任での利用：この文書は基本的な知識を提供しますが、特に細部における情報の正確さは保証されていません。自己責任での利用をお願いします。
+4. 保証の制限：この文書の内容は完全または正確であることを保証するものではありません。既に学習されている方は自己の学習に依存することをお勧めしますが、未学習の方にとっては通学中などの場面で有益な情報源となるかもしれません。
+
+---
+
+License and Terms of Use
+
+This document is provided under a No Redistribution License. The following conditions apply:
+
+1. No Redistribution: Redistribution, sharing, or public release of this document is strictly prohibited.
+2. For Reference Only: While this document may serve as an introductory resource for those unfamiliar with the subject, the accuracy and completeness of its details cannot be guaranteed.
+3. Use at Your Own Risk: Although the document offers basic knowledge, the information provided—particularly in its finer details—may not be fully accurate. Use responsibly and at your own discretion.
+4. Limited Warranty: The document does not offer any guarantee of completeness or total accuracy. If you are already familiar with the subject matter, we recommend relying on your own studies. For those less familiar, this document may still offer useful insights, such as during your commute.
+
+---
+
+许可和使用条款
+
+本文件根据禁止再分发许可提供，适用以下条款：
+
+1. 禁止再分发：严禁再分发、共享或公开发布本文件。
+2. 仅供参考：本文件可能作为对未学习此主题的人员的入门资源，但不保证其细节的准确性和完整性。
+3. 自行承担风险使用：尽管本文件提供了基础知识，但提供的信息，特别是细节部分，可能并不完全准确。请根据自身情况负责使用。
+4. 有限保证：本文件并不提供关于其完整性或准确性的任何保证。对于已经熟悉该主题的用户，建议依赖自己的学习。然而，对于不熟悉的用户，本文件在通勤时等场景可能仍然提供有用的见解。
